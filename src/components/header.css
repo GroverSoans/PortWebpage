@@ -1,0 +1,13 @@
+.underline-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #CFFF04;
+    transition: width 0.3s;
+    margin-top: 4px; /* Adjust this value for desired padding */
+}
+
+.underline-link:hover::after, .underline-active::after{
+    width: 100%;
+}

@@ -4,7 +4,7 @@ import { LayeredWaves } from '../components/LayeredWaves'
 
 function Home() {
   return (
-    <div>
+    <div id="home">
       <LayeredWaves/>
     </div>
         
