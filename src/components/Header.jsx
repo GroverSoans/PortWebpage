@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { RiMenu5Fill, RiCloseCircleLine } from "react-icons/ri";
 import {Link, animateScroll as scroll} from 'react-scroll';
-import './header.css'
+import './css/header.css'
 
 //flex-grow flex justify-center
 const Header = () => {

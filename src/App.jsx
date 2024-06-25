@@ -8,14 +8,14 @@ import Projects from "./pages/Projects"
 function App() {
 
   return (
-    <div>
+    <main>
       <Header/>
       <Home/>
       <About/>
       <Projects/>
       <Contact/>
       <Footer/>
-    </div>
+    </main>
   )
 }
 
