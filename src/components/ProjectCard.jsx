@@ -3,15 +3,6 @@ import PropTypes from 'prop-types';
 
 import { FaChrome, FaGithub } from "react-icons/fa";
 
-//Prop Validation
-ProjectCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  githubLink: PropTypes.string.isRequired,
-  demoLink: PropTypes.string.isRequired,
-};
-
 //Function to build project card component
 const ProjectCard = ({ title, image, description, githubLink, demoLink }) => {
   return (
@@ -32,6 +23,15 @@ const ProjectCard = ({ title, image, description, githubLink, demoLink }) => {
     </div>
 
   )
+};
+
+//Prop Validation
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
+  demoLink: PropTypes.string.isRequired,
 };
 
 

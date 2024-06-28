@@ -1,6 +1,5 @@
 import React from 'react'
-import './css/pages.css'
-import ProjectCards from '../components/ProjectCard';
+
 import CardSlider from '../components/CardSlider';
 
 function Projects() {
