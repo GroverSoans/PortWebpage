@@ -9,7 +9,7 @@ import Projects from "./pages/Projects"
 function App() {
 
   return (
-    <main className="overflow-x-hidden">
+    <main>
       <Header/>
       <Home/>
       <About/>
