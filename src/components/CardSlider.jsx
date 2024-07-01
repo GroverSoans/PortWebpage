@@ -37,7 +37,8 @@ const CardSlider = () => {
   return (
     <div className='relative flex items-center w-full' >
       <TiChevronLeftOutline className='text-[#CFFF04] cursor-pointer opacity-50 hover:opacity-100 hover:scale-125' onClick={slideLeft} size={40}/>
-      <div  ref={sliderRef} id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth'>
+      <div  ref={sliderRef} id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'>
+      {/*<h3 className='absolute inset-0 flex items-center justify-center text-[#CFFF04] text-[500px] opacity-90 pointer-events-none'>Projects</h3>*/}
         {projects.map((project) => (
           <ProjectCard   
             key={project.id}

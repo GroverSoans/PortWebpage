@@ -1,9 +1,14 @@
-import React from 'react'
+import Footer from "../components/Footer"
+
 
 function Contact() {
   return (
-    <h1 id='contact' className='bg-green-200 h-screen w-screen flex justify-center items-center text-green-400 text-5xl'>Contact</h1>
+    <div id='contact' className='bg-green-200 h-screen w-screen'>
+      <h1 className="flex items-center justify-center p-96">contact</h1>
+
+      <Footer/>
+    </div>
   )
-}
+}   
 
 export default Contact
