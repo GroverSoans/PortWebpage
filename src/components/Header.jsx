@@ -13,8 +13,8 @@ const Header = () => {
     }
 
   const handleScroll = () => {
-    const homeHeight = document.getElementById('home').offsetHeight;
-    const aboutHeight = document.getElementById('about').offsetHeight;
+    const homeHeight = document.getElementById('home').offsetHeight - 500;
+    const aboutHeight = document.getElementById('about').offsetHeight ;
     const projectsHeight = document.getElementById('projects').offsetHeight;
 
     const scrollPosition = window.scrollY;
@@ -43,25 +43,25 @@ const Header = () => {
         <div className='flex justify-center'>          
             <ul className='hidden lg:flex space-x-8 translate-y-1'>
               {/*Navbar elements*/}
-              <button className='px-4 py-4'>
+              <button className='px-4 py-4 hover:scale-110'>
                 <Link to="home" spy={true} smooth={true} duration={500}
                 className={`text-white text-xl underline-link ${activeSection === 'home' ? 'underline-active' : ''}`}>
                   Home<span className='text-[#CFFF04]'>.</span></Link>
               </button>
 
-              <button className='py-2 px-4'>
+              <button className='py-2 px-4 hover:scale-110'>
                 <Link to="about" spy={true} smooth={true} duration={500}
                 className={`text-white text-xl underline-link ${activeSection === 'about' ? 'underline-active' : ''}`}>
                   About<span className='text-[#CFFF04]'>.</span></Link>
               </button>
 
-              <button className='px-4 py-2'>
+              <button className='px-4 py-2 hover:scale-110'>
                 <Link to="projects" spy={true} smooth={true} duration={500} 
                 className={`text-white text-xl underline-link ${activeSection === 'projects' ? 'underline-active' : ''}`}>
                   Projects<span className='text-[#CFFF04]'>.</span></Link>
               </button>
 
-              <button className='px-4 py-2'>
+              <button className='px-4 py-2 hover:scale-110'>
                 <Link to="contact" spy={true} smooth={true} duration={500} 
                 className ={`text-white text-xl underline-link ${activeSection === 'contact' ? 'underline-active' : ''}`}>
                   Contact<span className='text-[#CFFF04]'>.</span></Link>

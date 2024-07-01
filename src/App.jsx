@@ -1,4 +1,4 @@
-import CardSlider from "./components/CardSlider"
+
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import About from "./pages/About"
@@ -15,7 +15,6 @@ function App() {
       <About/>
       <Projects/>
       <Contact/>
-      <CardSlider/>
       <Footer/>
     </main>
   )

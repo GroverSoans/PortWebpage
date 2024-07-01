@@ -35,8 +35,8 @@ const CardSlider = () => {
   
 
   return (
-    <div className='relative flex items-center' >
-      <TiChevronLeftOutline className='text-[#CFFF04]' onClick={slideLeft} size={40}/>
+    <div className='relative flex items-center w-full' >
+      <TiChevronLeftOutline className='text-[#CFFF04] cursor-pointer opacity-50 hover:opacity-100 hover:scale-125' onClick={slideLeft} size={40}/>
       <div  ref={sliderRef} id='slider' className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth'>
         {projects.map((project) => (
           <ProjectCard   
@@ -49,7 +49,7 @@ const CardSlider = () => {
           />
         ))}
       </div>
-      <TiChevronRightOutline className='text-[#CFFF04]' onClick={slideRight} size={40}/>
+      <TiChevronRightOutline className='text-[#CFFF04] cursor-pointer opacity-50 hover:opacity-100 hover:scale-125' onClick={slideRight} size={40}/>
     </div>
     
 
