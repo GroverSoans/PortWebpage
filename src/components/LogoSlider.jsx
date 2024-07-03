@@ -29,24 +29,24 @@ const items = [
 ];
 
 return (
-  <div className="bottom-0 overflow-hidden w-full h-20 bg-transparent relative ">
+  <div className="bottom-7 overflow-hidden w-full h-20 bg-black relative ">
     <div className="absolute top-0 left-0 w-full h-full flex animate-scroll">
       <div className="flex items-center">
         {items.map((item, index) => (
             <div
               key={index}
-              className="w-auto h-10 bg-black p-3 m-3 flex items-center justify-center text-white text-nowrap rounded-md"
+              className="w-auto h-10 bg-black p-3 m-3 flex items-center justify-center text-white text-nowrap rounded-md hover:scale-125"
             >
-              <div className="mr-1">{item.icon}</div>
+              <div className="mr-1 text-[#CFFF04]">{item.icon}</div>
               <span>{item.word}</span>           
             </div>
           ))}
           {items.map((item, index) => (
             <div
               key={`${index}-duplicate`}
-              className="w-auto h-10 bg-black p-3 m-3 flex items-center justify-center text-white text-nowrap"
+              className="w-auto h-10 bg-black p-3 m-3 flex items-center justify-center text-white text-nowrap rounded-md hover:scale-125"
             >
-              <div className="w-6 h-6 mb-1">{item.icon}</div>
+              <div className="mr-1 text-[#CFFF04]">{item.icon}</div>
               <span>{item.word}</span>
             </div>
           ))}
