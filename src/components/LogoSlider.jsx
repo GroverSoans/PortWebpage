@@ -29,7 +29,7 @@ const items = [
 ];
 
 return (
-  <div className="bottom-7 overflow-hidden w-full h-20 bg-black relative ">
+  <div className="bottom-0 overflow-hidden w-full h-20 bg-black relative ">
     <div className="absolute top-0 left-0 w-full h-full flex animate-scroll">
       <div className="flex items-center">
         {items.map((item, index) => (
