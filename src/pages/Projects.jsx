@@ -10,7 +10,7 @@ function Projects() {
         <h1 className='text-4xl font-bold inline-block border-b-4 border-[#CFFF04] pb-1'>Featured Projects<span className='text-[#CFFF04]'>.</span></h1>
         <h2 className='font-bold pb-6'>Section dedicated to showcasing a few projects I have completed<span className='text-[#CFFF04]'>.</span></h2>
       </header>
-      <div className='bg-gradient-to-r from-black to-white py-4'>
+      <div className='bg-gradient-to-t from-black via-white to-black py-4'>
         <CardSlider/>
       </div>
       <footer className='text-white text-center text-balance pt-8 font-semibold px-10'>

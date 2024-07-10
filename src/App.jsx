@@ -1,3 +1,4 @@
+import ContactForm from "./components/ContactForm"
 import Header from "./components/Header"
 import PreLoader from "./components/PreLoader"
 import About from "./pages/About"
@@ -18,6 +19,7 @@ function App() {
       <About/>
       <Projects/>
       <Contact/>
+      <ContactForm/>
     </main>
   
   </>

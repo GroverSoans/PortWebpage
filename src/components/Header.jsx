@@ -37,7 +37,7 @@ const Header = () => {
    }, []);
 
   return (
-    <nav className='fixed top-0 w-full h-20 bg-current z-10'>
+    <nav className='fixed top-0 w-full h-20 bg-current z-20'>
       <div className='flex justify-between items-center px-4'>
         <h1 className='font-bold text-7xl text-white'>Portfolio<span className='text-[#CFFF04]'>.</span></h1>
         <div className='flex justify-center'>          

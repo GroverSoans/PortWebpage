@@ -2,7 +2,10 @@
 import Footer from "../components/Footer"
 
 
-function Contact() {
+
+const Contact = () => {
+
+
   return (
     <div id='contact' className='bg-green-200 h-screen w-screen overflow-hidden flex flex-col justify-between'>
       <div>
