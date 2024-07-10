@@ -145,7 +145,7 @@ const ContactForm = () => {
             </div>
           </form>
           {/* Notification */}
-          {status && <div className="mt-4 p-2 text-center text-white bg-blue-700 rounded">{status}</div>}
+          {status && <div className="mt-4 p-2 text-center text-white bg-blue-500 rounded">{status}</div>}
         </div>
       </div>
     </div>
