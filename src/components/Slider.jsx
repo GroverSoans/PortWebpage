@@ -81,7 +81,7 @@ const Slider = () => {
     return () => {
       document.removeEventListener("click", handleSlider);
     };
-  }, [currentIndex, controls]);
+  },);
 
   return (
     <div className='w-screen h-screen bg-black overflow-hidden'>
@@ -98,8 +98,8 @@ const Slider = () => {
             </div>
           ))}
         </motion.div>
-            <div className="flex  justify-center ">
-                <SplitImage src = {`/src/assets/img${currentIndex}.jpg`}  />
+            <div className="w-full h-full flex justify-center items-center">
+                <SplitImage src = "/src/assets/img${index}.jpg" />
           </div>
       </div>
     </div>

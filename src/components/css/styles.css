@@ -9,22 +9,40 @@
 
 .img-top {
   /* Specific styles for the top half */
+  clip-path: polygon(85% 0%, 0% 0%, 0% 50%, 85% 50%);
   background-position: top;
-  transform: translateX(-15%);
+ 
 }
 
 .img-bottom {
   /* Specific styles for the bottom half */
+  clip-path: polygon(100% 50%, 15% 50%, 15% 100%, 100% 100%);
   background-position: bottom;
-  transform: translateX(15%);
+  
 }
 
 .split-image-container:hover .img-top {
-  /* Transition the top half back to original position on hover */
-  transform: translateX(0);
+  clip-path: polygon(90% 0%, 10% 0%, 10% 50%, 90% 50%);
 }
 
 .split-image-container:hover .img-bottom {
-  /* Transition the bottom half back to original position on hover */
-  transform: translateX(0);
+  clip-path: polygon(90% 50%, 10% 50%, 10% 100%, 90% 100%);
+}
+
+@media (max-width: 900px) {
+  .split-image-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-top,
+  .img-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .split-image-container:hover .img-top,
+  .split-image-container:hover .img-bottom {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
 }
