@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import SplitImage from './SplitImage';
 
 const sliderContent = [
   "Neo Forge Towers",
@@ -84,7 +85,7 @@ const Slider = () => {
 
   return (
     <div className='w-screen h-screen bg-black overflow-hidden'>
-      <div className="slider w-screen h-screen">
+      <div className="slider w-screen h-screen justify-center">
         <motion.div 
           className="slide-titles absolute w-[300vw] h-screen flex pointer-events-none z-10"
           animate={controls}
@@ -97,9 +98,8 @@ const Slider = () => {
             </div>
           ))}
         </motion.div>
-        <div className="slide-images w-[550px] h-[500px] absolute">
-            <div className="img-top absolute w-full h-full transition-transform duration-1000 ease-in-out"></div>
-            <div className="img-bottom absolute w-full h-full transition-transform duration-1000 ease-in-out"></div>
+            <div className="flex  justify-center ">
+                <SplitImage src = {`/src/assets/img${currentIndex}.jpg`}  />
           </div>
       </div>
     </div>
